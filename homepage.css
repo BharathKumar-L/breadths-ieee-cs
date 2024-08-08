@@ -1,0 +1,7 @@
+
+nav li, ul{
+    display: inline;
+}
+nav{
+    background-color: purple;
+}
