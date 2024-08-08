@@ -1,0 +1,30 @@
+body{
+    background-image: url(img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.events{
+    width:1000px;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.APS{
+    width: 30%;
+    height: 40%;
+    border: 1px solid black;
+    background-color: #b5a6e3;
+    margin: 0;
+}
+
+.APS img{
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.APS 
