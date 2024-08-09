@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    
+    padding: 0;
 }
 nav {
     padding: 1%;
@@ -73,6 +73,10 @@ body {
     display: flex;
     flex-direction: row;
     box-shadow: 0 0 8px 0;
+    transition-duration: .5s;
+}
+.APS:hover{
+    transform: scale(1.1);
 }
 
 .APS .image {
