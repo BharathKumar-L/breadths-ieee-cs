@@ -8,7 +8,7 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: justify;
 }
 
 nav {
@@ -109,4 +109,55 @@ li {
     h1 span {
         font-size: 1.25em;
     }
+}
+.REC,.BREADTHS{
+    background-color: rgba(43, 62, 80, 0.55);
+}
+
+.STUDENTBRANCH {
+    background-color: rgba(43, 62, 80, 0.75);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.REC,
+.STUDENTBRANCH,
+.BREADTHS {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: both;
+    color: #FFFFFF;
+    width: 95%;
+    padding: 1%;
+    height: 95%;
+    text-align: justify;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow:
+        4px 4px 8px #2c3e50,
+        -4px -4px 8px #56a1b3;
+}
+
+.REC {
+    animation-delay: 0.3s;
+}
+.STUDENTBRANCH {
+    animation-delay: 0.8s;
+}
+.BREADTHS {
+    animation-delay: 1.3s;
+}
+.BREADTHS:hover,.STUDENTBRANCH:hover,.REC:hover{
+    background-color: rgba(30, 52, 74, 0.9);
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
 }
