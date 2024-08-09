@@ -8,7 +8,7 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: justify;
 }
 
 nav {
@@ -109,4 +109,18 @@ li {
     h1 span {
         font-size: 1.25em;
     }
+}
+.REC{
+    margin-left: 2%;
+width: 100%;
+    padding: 1%;
+  height: 100%;
+  background-color: #3498db;
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 
+    4px 4px 8px #2c3e50,   
+    -4px -4px 8px #ecf0f1;
 }
