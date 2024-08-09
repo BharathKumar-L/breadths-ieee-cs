@@ -56,15 +56,6 @@ li {
     transform: scale(1.2);
 }
 
-h1 {
-    color: black;
-    margin: 20px 0;
-}
-
-h1 span {
-    font-size: 1.75em;
-}
-
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
