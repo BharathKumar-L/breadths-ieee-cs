@@ -64,7 +64,7 @@ body {
     height: 100%;
 }
 
-.APS {
+/* .APS {
     width: 30%;
     height: 250px; 
     border: 1px solid black;
@@ -100,4 +100,81 @@ body {
     height: 20%;
     text-align: center;
     border: 1px solid black;
+} */
+
+.box {
+    background: white;
+    border-radius: 8%;
+    box-shadow: 2px 15px 20px -12px rgb(32, 32, 32);
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    position: relative;
+    width: 30%;
+    height: 17rem;
 }
+  
+.box-label {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.125em;
+}
+  
+.box-title {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    text-orientation: mixed;
+}
+  
+.box-icon {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 18px 0 18px 0;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .studio-button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    background: #0299b8;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: 0.35s ease all;
+    overflow: hidden;
+    max-width: 6.5%;
+  }
+  
+  .studio-button-icon {
+    position: relative;
+    top: 1px;
+  }
+  
+  .studio-button-label {
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 8px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.25s ease all;
+  }
+  
+  .box:hover {
+    .studio-button {
+      max-width: 70%;
+    }
+    .studio-button-label {
+      opacity: 1;
+      transform: translateX(0);
+      transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
+    }
+  }
