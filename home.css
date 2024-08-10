@@ -3,14 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
 
 body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    color: #FFD700;
+    text-transform: uppercase;
 }
 
 nav {
@@ -60,7 +64,7 @@ li {
 
 h1 {
     color: black;
-    margin: 20px 0;
+    margin: 20px 0;    
 }
 
 h1 span {
