@@ -110,13 +110,6 @@ li {
         font-size: 1.25em;
     }
 }
-.REC,.BREADTHS{
-    background-color: rgba(43, 62, 80, 0.55);
-}
-
-.STUDENTBRANCH {
-    background-color: rgba(43, 62, 80, 0.75);
-}
 
 @keyframes fadeIn {
     from {
@@ -135,9 +128,9 @@ li {
 .BREADTHS {
     animation: fadeIn 1s ease-in-out;
     animation-fill-mode: both;
-    color: #FFFFFF;
+    color: black;
     width: 95%;
-    padding: 1%;
+    padding: 2%;
     height: 95%;
     text-align: justify;
     font-size: 18px;
@@ -157,7 +150,16 @@ li {
     animation-delay: 1.3s;
 }
 .BREADTHS:hover,.STUDENTBRANCH:hover,.REC:hover{
-    background-color: rgba(30, 52, 74, 0.9);
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
+    background-color: rgba(56, 77, 98, 0.9);
+    color: #FFFF;
+    transition-duration: 0.4s;
+    transition:ease-out 0.5s;
+}
+.REC:hover h1.header,.STUDENTBRANCH:hover h1.header,.BREADTHS:hover h1.header 
+{
+    color: pink;
+    transition-duration: 0.5s;
+}
+.header{
+    color: rgb(203, 7, 170);
 }
