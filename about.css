@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -138,6 +139,7 @@ li {
     box-shadow:
         4px 4px 8px #2c3e50,
         -4px -4px 8px #56a1b3;
+    transition-duration: 0.5s;
 }
 
 .REC {
@@ -154,6 +156,7 @@ li {
     color: #FFFF;
     transition-duration: 0.4s;
     transition:ease-out 0.5s;
+    transform: scale(1.3);
 }
 .REC:hover h1.header,.STUDENTBRANCH:hover h1.header,.BREADTHS:hover h1.header 
 {
@@ -162,4 +165,5 @@ li {
 }
 .header{
     color: rgb(203, 7, 170);
+    margin-bottom: 1%;
 }
