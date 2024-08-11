@@ -97,6 +97,7 @@ body {
 .APS .soc {
     height: 40%;
     text-align: center;
+    text-transform:uppercase;
 }
 
 .APS .title {

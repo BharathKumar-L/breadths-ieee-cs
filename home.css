@@ -15,7 +15,6 @@ body {
     font-weight: 700;
     color: #FFD700;
     text-transform: uppercase;
-    padding-bottom: 2%;
 }
 
 nav {
@@ -129,7 +128,7 @@ h1 span {
 }
 .countdown-container {
     text-align: center;
-    color: gold;
+    color:#FFDD00;
     font-family: 'Arial', sans-serif;
     margin-top: 20px;
 }
@@ -158,4 +157,13 @@ h1 span {
 .time p {
     font-size: 18px;
     margin: 0;
+}
+
+.contactus{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
+    padding: 1%;
+}
+.Copyright{
+    color: black;
 }
