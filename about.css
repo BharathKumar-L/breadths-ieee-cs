@@ -52,12 +52,9 @@ li {
 }
 
 .navbtn:hover {
-    border: solid gray 2px;
     background-color: #0299b8;
-    transform: scale(1.2);
-    box-shadow:
-        4px 4px 8px #82cee8,
-        -4px -4px 8px #56a1b3;
+    transform: translateY(-0.5em);
+    box-shadow: 0 10px 8px #56a1b3;
 }
 
 @media screen and (max-width: 768px) {
