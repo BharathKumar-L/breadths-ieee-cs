@@ -1,100 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE BREADTHS</title>
     <link rel="stylesheet" href="events.css">
     <link rel="icon" href="img/icon.png">
+    <script src="events.js" defer></script>
 </head>
-
 <body>
     <nav>
         <a href="HOME.html"><img class="logo" src="img/IEEE_LOGO.png" alt="IEEE STUDENT BRANCH"></a>
         <ul>
-            <li class="btn">
-                <a href="HOME.html"><button class="navbtn">HOME</button></a>
-            </li>
-            <li class="btn">
-                <a href="events.html"><button class="navbtn">EVENTS</button></a>
-            </li>
-            <li class="btn">
-                <a href="register.html"><button class="navbtn">REGISTER</button></a>
-            </li>
-            <li class="btn">
-                <a href="about.html"><button class="navbtn">ABOUT</button></a>
-            </li>
-            <li class="btn">
-                <a href="contactus.html"><button class="navbtn">CONTACT US</button></a>
-            </li>
+            <li class="btn"><a href="HOME.html"><button class="navbtn">HOME</button></a></li>
+            <li class="btn"><a href="events.html"><button class="navbtn">EVENTS</button></a></li>
+            <li class="btn"><a href="register.html"><button class="navbtn">REGISTER</button></a></li>
+            <li class="btn"><a href="about.html"><button class="navbtn">ABOUT</button></a></li>
+            <li class="btn"><a href="contactus.html"><button class="navbtn">CONTACT US</button></a></li>
         </ul>
     </nav>
-    <div class="events">
-        <div class="APS">
-            <div class="image"><img src="img/apslogo.png" /></div>
-            <div class="soc"><h1>Antenna and Propagation Society</h1></div>
-            <div class="title"><p>Hack Hive</p></div>
-            <div class="content" style="display: none;">
-                <h2>IEEE ANTENNAS AND PROPAGATION SOCIETY</h2>
-                <p>Welcome to the IEEE Symposium Quiz! This engaging and intellectually stimulating competition is designed to challenge your knowledge, quick thinking, and teamwork. Participants will navigate through a series of rounds, each with unique formats and themes, testing their expertise across a broad range of topics. Whether you're a seasoned quizzer or a curious mind, this quiz promises to be an exciting journey filled with learning.</p>
-                <p><strong>Duration:</strong> 80 minutes (1 hour 10 minutes)<br>
-                <strong>Prizes:</strong> Top 3 teams will be awarded with cash prizes<br>
-                <strong>Requirements:</strong> Projector or Smart board</p>
-                
-                <h3>RULES</h3>
-                <p><strong>Preliminary Round: Online Quiz (if necessary)</strong><br>
-                <strong>Format:</strong> Online Multiple Choice Questions (MCQs)<br>
-                <strong>Description:</strong> If the number of participants exceeds the limit, an online quiz will be conducted. Participants will answer a set of MCQs covering a wide range of general knowledge and technical topics.<br>
-                <strong>Duration:</strong> 30 minutes<br>
-                <strong>Selection Criteria:</strong> The top-scoring teams will be selected to participate in the on-site rounds.<br>
-                <strong>Instructions:</strong> Participants will receive a link to the quiz and must complete it within the specified time.</p>
-                
-                <p><strong>On-Site Rounds (for selected participants)</strong></p>
-                <p><strong>Round 1: CONNEXIONS</strong><br>
-                <strong>Format:</strong> Visual Identification<br>
-                <strong>Description:</strong> Participants will be shown images related to technological innovations. Teams will have to identify the images and provide the answers.<br>
-                <strong>Scoring:</strong> Points for correct identification and no negative marking.</p>
-                
-                <p><strong>Round 2: Written Quiz (Pen and Paper)</strong><br>
-                <strong>Format:</strong> Single Word Answer Questions<br>
-                <strong>Description:</strong> In this round, participants will answer a set of questions provided to them in a pen-and-paper format.<br>
-                <strong>Instructions:</strong> Each team will receive a question paper and answer sheet. They will have 30 minutes to complete the quiz.<br>
-                <strong>Scoring:</strong> Points for each correct answer. Accuracy is key, as each response should be a single word.</p>
-                
-                <p><strong>Round 3: Rapid Fire</strong><br>
-                <strong>Format:</strong> Quick Response Questions<br>
-                <strong>Description:</strong> In this high-energy round, teams will answer as many questions as possible within a short time frame. Questions will cover a wide range of topics and require quick thinking and rapid responses.<br>
-                <strong>Scoring:</strong> Points for each correct answer. Incorrect answers do not incur penalties, but time is critical.</p>
-                
-                <p><strong>Round 4: Final Showdown</strong><br>
-                <strong>Format:</strong> Quick Response Round<br>
-                <strong>Description:</strong> Teams will compete to respond first to each question. The team that responds first will have their answer considered.<br>
-                <strong>Instructions:</strong> Teams must raise their hands or use a designated signal to indicate they are ready to answer. If the answer is correct, they will earn points; if the answer is incorrect, negative marking will be applied.<br>
-                <strong>Scoring:</strong> Points for each correct answer. Negative points for incorrect answers.</p>
 
-                <h3>Instructions:</h3>
-                <p>Each team should consist of 1-3 members.<br>
-                Participants must maintain decorum and respect the event coordinators and other participants.<br>
-                Using mobile phones is strictly prohibited.<br>
-                Any form of cheating or malpractice will lead to immediate disqualification.<br>
-                The decisions of the Quiz Masters are final and binding.<br>
-                Certificates will be provided to all participants.</p>
+    <div class="events">
+        <!-- Antenna and Propagation Society -->
+        <div class="APS">
+            <div class="image">
+                <img src="img/apslogo.png" alt="Antenna and Propagation Society Logo">
             </div>
-            <div class="studio-button">
+            <div class="soc">
+                <h1>Antenna and Propagation Society</h1>
+            </div>
+            <div class="title">
+                <p>Hack Hive</p>
+            </div>
+            <div class="studio-button" data-event="antennas-propagation">
                 <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                     </svg>
                 </div>
-                <div class="studio-button-label" onclick="openPopup(this)">
+                <div class="studio-button-label">
                     LEARN MORE...
                 </div>
             </div>
         </div>
+
+        <!-- Computer Intelligence Society -->
         <div class="APS">
             <div class="image">
-                <img src="img/cislogo.png">
+                <img src="img/cislogo.png" alt="Computer Intelligence Society Logo">
             </div>
             <div class="soc">
                 <h1>Computer Intelligence Society</h1>
@@ -102,117 +56,7 @@
             <div class="title">
                 <p>Hack Hive</p>
             </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>Communications Society</h1>
-            </div>
-            <div class="title">
-                <p>GRAPHIX</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/IEEE_CS.png" />
-            </div>
-            <div class="soc">
-                <h1>Computer Society</h1>
-            </div>
-            <div class="title">
-                <p>Webpage Recreation Challenge</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/IEEE_EMB.png" />
-            </div>
-            <div class="soc">
-                <h1>Engineering in Medicine and Biology Society</h1>
-            </div>
-            <div class="title">
-                <p>BIOINNOVATE</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>Communications Society</h1>
-            </div>
-            <div class="title">
-                <p>GRAPHIX</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>Communications Society</h1>
-            </div>
-            <div class="title">
-                <p>GRAPHIX</p>
-            </div>
-            <div class="studio-button">
+            <div class="studio-button" data-event="computational-intelligence">
                 <div class="studio-button-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -220,136 +64,186 @@
                     </svg>
                 </div>
                 <div class="studio-button-label">
-                    LEARN MORE... </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/PES.png" />
-            </div>
-            <div class="soc">
-                <h1>POWER AND ENERGY SOCIETY</h1>
-            </div>
-            <div class="title">
-                <p>IDEATHON</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
                     LEARN MORE...
                 </div>
             </div>
         </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>Communications Society</h1>
-            </div>
-            <div class="title">
-                <p>GRAPHIX</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label">
-                    LEARN MORE... </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/RAS.png" />
-            </div>
-            <div class="soc">
-                <h1>Robotics and Automation Society</h1>
-            </div>
-            <div class="title">
-                <p>Circuit Debugging</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>TECHNOLOGY AND ENGINEERING MANAGEMENT</h1>
-            </div>
-            <div class="title">
-                <p>SHARK TANK</p>
-            </div>
-            <div class="studio-button">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div class="APS">
-            <div class="image">
-                <img src="img/comsoc-logo.png" />
-            </div>
-            <div class="soc">
-                <h1>Communications Society</h1>
-            </div>
-            <div class="title">
-                <p>GRAPHIX</p>
-            </div>
-            <div class="studio-button" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
-                    LEARN MORE...
-                </div>
-            </div>
-        </div>
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close-btn" onclick="closePopup()">&times;</span>
-                <div id="popup-body"></div>
-            </div>
-        </div>
-    
-        <script>
-            function openPopup(element) {
-                var content = element.closest('.APS').querySelector('.content').innerHTML;
-                document.getElementById('popup-body').innerHTML = content;
-                document.getElementById('popup').style.display = 'block';
-            }
-    
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none';
-            }
-        </script>
-</body>
 
+        <div class="APS">
+            <div class="image">
+                <img src="img/comsoc-logo.png" alt="Poster Presentation Graphix Logo">
+            </div>
+            <div class="soc">
+                <h1>Poster Presentation - Graphix</h1>
+            </div>
+            <div class="title">
+                <p>Hack Hive</p>
+            </div>
+            <div class="studio-button" data-event="poster-presentation-graphix">
+                <div class="studio-button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                </div>
+                <div class="studio-button-label">
+                    LEARN MORE...
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup for Event Details -->
+        <div id="event-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <div id="event-details"></div>
+            </div>
+        </div>    
+
+        <!-- Event Content -->
+        <div id="antennas-propagation-content" class="event-content">
+            <h2>Welcome to the IEEE Symposium Quiz!</h2>
+        <p>This engaging and intellectually stimulating competition is designed to challenge your knowledge, quick thinking, and teamwork. Participants will navigate through a series of rounds, each with unique formats and themes, testing their expertise across a broad range of topics. Whether you're a seasoned quizzer or a curious mind, this quiz promises to be an exciting journey filled with learning.</p>
+
+        <h3>Duration:</h3>
+        <p>80 minutes (1 hour 10 minutes)</p>
+
+        <h3>Prizes:</h3>
+        <p>Top 3 teams will be awarded with cash prizes</p>
+
+        <h3>Requirements:</h3>
+        <p>Projector or Smart board</p>
+
+        <h3>RULES</h3>
+        <h4>Preliminary Round: Online Quiz (if necessary)</h4>
+        <p><strong>Format:</strong> Online Multiple Choice Questions (MCQs)</p>
+        <p><strong>Description:</strong> If the number of participants exceeds the limit, an online quiz will be conducted. Participants will answer a set of MCQs covering a wide range of general knowledge and technical topics.</p>
+        <p><strong>Duration:</strong> 30 minutes</p>
+        <p><strong>Selection Criteria:</strong> The top-scoring teams will be selected to participate in the on-site rounds.</p>
+        <p><strong>Instructions:</strong> Participants will receive a link to the quiz and must complete it within the specified time.</p>
+
+        <h4>On-Site Rounds (for selected participants)</h4>
+        <h5>Round 1: CONNEXIONS</h5>
+        <p><strong>Format:</strong> Visual Identification</p>
+        <p><strong>Description:</strong> Participants will be shown images related to technological innovations. Teams will have to identify the images and provide the answers.</p>
+        <p><strong>Scoring:</strong> Points for correct identification and no negative marking.</p>
+
+        <h5>Round 2: Written Quiz (Pen and Paper)</h5>
+        <p><strong>Format:</strong> Single Word Answer Questions</p>
+        <p><strong>Description:</strong> In this round, participants will answer a set of questions provided to them in a pen-and-paper format.</p>
+        <p><strong>Instructions:</strong> Each team will receive a question paper and answer sheet. They will have 30 minutes to complete the quiz.</p>
+        <p><strong>Scoring:</strong> Points for each correct answer. Accuracy is key, as each response should be a single word.</p>
+
+        <h5>Round 3: Rapid Fire</h5>
+        <p><strong>Format:</strong> Quick Response Questions</p>
+        <p><strong>Description:</strong> In this high-energy round, teams will answer as many questions as possible within a short time frame. Questions will cover a wide range of topics and require quick thinking and rapid responses.</p>
+        <p><strong>Scoring:</strong> Points for each correct answer. Incorrect answers do not incur penalties, but time is critical.</p>
+
+        <h5>Round 4: Final Showdown</h5>
+        <p><strong>Format:</strong> Quick Response Round</p>
+        <p><strong>Description:</strong> Teams will compete to respond first to each question. The team that responds first will have their answer considered.</p>
+        <p><strong>Instructions:</strong> Teams must raise their hands or use a designated signal to indicate they are ready to answer. If the answer is correct, they will earn points; if the answer is incorrect, negative marking will be applied.</p>
+        <p><strong>Scoring:</strong> Points for each correct answer. Negative points for incorrect answers.</p>
+
+        <h3>Instructions:</h3>
+        <ul>
+            <li>Each team should consist of 1-3 members.</li>
+            <li>Participants must maintain decorum and respect the event coordinators and other participants.</li>
+            <li>Using mobile phone is strictly prohibited.</li>
+            <li>Any form of cheating or malpractice will lead to immediate disqualification.</li>
+            <li>The decisions of the Quiz Masters are final and binding.</li>
+            <li>Certificates will be provided to all participants.</li>
+        </ul>
+        </div>
+
+        <div id="computational-intelligence-content" class="event-content">
+            <h2>IEEE Computational Intelligence Society - HACK HIVE</h2>
+            <p>Total Duration: 4 hours</p>
+            <p>Location: Idea Factory</p>
+            <p>Max. Teams: 15</p>
+            <p>Description: Participants prototype the core functionalities of their solution for the given problem statements rather than developing a full-fledged solution.</p>
+            <h3>RULES:</h3>
+            <ol>
+                <li>A team of 2-4 or an individual can participate in this event.</li>
+                <li>Problem Statements will be announced during the registration and AI-driven Solutions are expected.</li>
+                <li>On the event day, teams will be provided with 2.5 hours to prototype the core functionalities of their solution and present it to the jury.</li>
+                <li>Judging Criteria: Teams will be evaluated based on their idea and prototype on criteria such as innovation, feasibility, and presentation quality.</li>
+                <li>The jury’s decision is final.</li>
+                <li>Participants must bring their own laptops, charger, and other required devices for the event.</li>
+                <li>The top 3 teams/individuals will be rewarded.</li>
+                <li>Participants are expected to maintain professional conduct. Any form of misconduct, including plagiarism or inappropriate behavior, will result in disqualification.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="communication-content" class="event-content">
+        <h2>Poster Presentation - Graphix</h2>
+        <p><strong>Faculty Co-ordinator/Mentor:</strong> Dr. Chitra S (Professor-Dept of ECE)</p>
+        <p><strong>Student Co-ordinators:</strong> Vasanth B (ECE-III-D), Ashwini S (ECE-III-A)</p>
+        <p><strong>Contact Number:</strong> +91 86089 35547, +91 91507 23147</p>
+        
+        <h3>Event Description:</h3>
+        <p>Poster-making competition under the IEEE Communications Society (IEEE ComSoc). This event aims to encourage participants to creatively explore and visualize the developments and future technologies of various Engineering fields and their potential societal impacts.</p>
+    
+        <h3>Event Details:</h3>
+        <p>A poster-making competition using Canva/Photoshop on any of the following topics:</p>
+        <ul>
+            <li>5G and Beyond</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Role of AI and ML in Engineering</li>
+            <li>Wearable Technology</li>
+            <li>Cybersecurity</li>
+            <li>Photonic Communications</li>
+            <li>Augmented Reality (AR) and Virtual Reality (VR)</li>
+            <li>3D printing, additive manufacturing, and Industry 4.0</li>
+            <li>Robotics and Automation</li>
+            <li>Mechatronics and Smart Systems</li>
+            <li>NanoScience</li>
+            <li>Aerospace technology</li>
+        </ul>
+    
+        <h3>Objective:</h3>
+        <p>To engage students and professionals in a creative exercise that showcases their knowledge and vision on the given topics.</p>
+    
+        <h3>Eligibility:</h3>
+        <p>Open to all REC Students and IEEE members across all the colleges.</p>
+    
+        <h3>Submission Guidelines:</h3>
+        <ul>
+            <li>Each submission must include a short description (one liner) of the concept and innovation depicted in the poster.</li>
+            <li>All text on the poster should be in English and posters should not include any offensive or inappropriate content.</li>
+            <li>Plagiarism leads to disqualification.</li>
+            <li>Participants must use Canva or Photoshop for designing their posters. No other software or hand-drawn elements are allowed.</li>
+            <li>Submit in the form of jpeg, jpg, or png with high resolution (300 pixels) during the event.</li>
+            <li>Posters must be designed in A3 size (297mm x 420mm).</li>
+        </ul>
+    
+        <h3>Judging Criteria:</h3>
+        <ul>
+            <li>Creativity and originality</li>
+            <li>Clarity and coherence of the message to the title</li>
+            <li>Relevance to the theme</li>
+            <li>Visual appeal and design</li>
+        </ul>
+    
+        <h3>Prizes:</h3>
+        <ul>
+            <li>First Prize: Rs.1000 + Certificate of Excellence</li>
+            <li>Second Prize: Rs.750 + Certificate of Excellence</li>
+            <li>Third Prize: Rs.500 + Certificate of Excellence</li>
+            <li>Certificate of Recognition to all the participants</li>
+        </ul>
+    
+        <h3>Judges:</h3>
+        <p>To be announced.</p>
+    
+        <h3>Event Timeline:</h3>
+        <p>A total of 3 hours will be given for the competition. Results will be announced during the felicitation.</p>
+    
+        <h3>Amount Required:</h3>
+        <p>Rs.2250 (for prizes only)</p>
+    
+        <h3>Extra Requirements:</h3>
+        <p>Seminar hall with internet connectivity.</p>
+    </div>
+</body>
 </html>
