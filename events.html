@@ -32,23 +32,62 @@
     </nav>
     <div class="events">
         <div class="APS">
-            <div class="image">
-                <img src="img/apslogo.png" />
-            </div>
-            <div class="soc">
-                <h1>Antenna and Propagation Society</h1>
-            </div>
-            <div class="title">
-                <p>Hack Hive</p>
+            <div class="image"><img src="img/apslogo.png" /></div>
+            <div class="soc"><h1>Antenna and Propagation Society</h1></div>
+            <div class="title"><p>Hack Hive</p></div>
+            <div class="content" style="display: none;">
+                <h2>IEEE ANTENNAS AND PROPAGATION SOCIETY</h2>
+                <p>Welcome to the IEEE Symposium Quiz! This engaging and intellectually stimulating competition is designed to challenge your knowledge, quick thinking, and teamwork. Participants will navigate through a series of rounds, each with unique formats and themes, testing their expertise across a broad range of topics. Whether you're a seasoned quizzer or a curious mind, this quiz promises to be an exciting journey filled with learning.</p>
+                <p><strong>Duration:</strong> 80 minutes (1 hour 10 minutes)<br>
+                <strong>Prizes:</strong> Top 3 teams will be awarded with cash prizes<br>
+                <strong>Requirements:</strong> Projector or Smart board</p>
+                
+                <h3>RULES</h3>
+                <p><strong>Preliminary Round: Online Quiz (if necessary)</strong><br>
+                <strong>Format:</strong> Online Multiple Choice Questions (MCQs)<br>
+                <strong>Description:</strong> If the number of participants exceeds the limit, an online quiz will be conducted. Participants will answer a set of MCQs covering a wide range of general knowledge and technical topics.<br>
+                <strong>Duration:</strong> 30 minutes<br>
+                <strong>Selection Criteria:</strong> The top-scoring teams will be selected to participate in the on-site rounds.<br>
+                <strong>Instructions:</strong> Participants will receive a link to the quiz and must complete it within the specified time.</p>
+                
+                <p><strong>On-Site Rounds (for selected participants)</strong></p>
+                <p><strong>Round 1: CONNEXIONS</strong><br>
+                <strong>Format:</strong> Visual Identification<br>
+                <strong>Description:</strong> Participants will be shown images related to technological innovations. Teams will have to identify the images and provide the answers.<br>
+                <strong>Scoring:</strong> Points for correct identification and no negative marking.</p>
+                
+                <p><strong>Round 2: Written Quiz (Pen and Paper)</strong><br>
+                <strong>Format:</strong> Single Word Answer Questions<br>
+                <strong>Description:</strong> In this round, participants will answer a set of questions provided to them in a pen-and-paper format.<br>
+                <strong>Instructions:</strong> Each team will receive a question paper and answer sheet. They will have 30 minutes to complete the quiz.<br>
+                <strong>Scoring:</strong> Points for each correct answer. Accuracy is key, as each response should be a single word.</p>
+                
+                <p><strong>Round 3: Rapid Fire</strong><br>
+                <strong>Format:</strong> Quick Response Questions<br>
+                <strong>Description:</strong> In this high-energy round, teams will answer as many questions as possible within a short time frame. Questions will cover a wide range of topics and require quick thinking and rapid responses.<br>
+                <strong>Scoring:</strong> Points for each correct answer. Incorrect answers do not incur penalties, but time is critical.</p>
+                
+                <p><strong>Round 4: Final Showdown</strong><br>
+                <strong>Format:</strong> Quick Response Round<br>
+                <strong>Description:</strong> Teams will compete to respond first to each question. The team that responds first will have their answer considered.<br>
+                <strong>Instructions:</strong> Teams must raise their hands or use a designated signal to indicate they are ready to answer. If the answer is correct, they will earn points; if the answer is incorrect, negative marking will be applied.<br>
+                <strong>Scoring:</strong> Points for each correct answer. Negative points for incorrect answers.</p>
+
+                <h3>Instructions:</h3>
+                <p>Each team should consist of 1-3 members.<br>
+                Participants must maintain decorum and respect the event coordinators and other participants.<br>
+                Using mobile phones is strictly prohibited.<br>
+                Any form of cheating or malpractice will lead to immediate disqualification.<br>
+                The decisions of the Quiz Masters are final and binding.<br>
+                Certificates will be provided to all participants.</p>
             </div>
             <div class="studio-button">
                 <div class="studio-button-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                     </svg>
                 </div>
-                <div class="studio-button-label" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
+                <div class="studio-button-label" onclick="openPopup(this)">
                     LEARN MORE...
                 </div>
             </div>
@@ -281,7 +320,7 @@
             <div class="title">
                 <p>GRAPHIX</p>
             </div>
-            <div class="studio-button">
+            <div class="studio-button" onclick="openPopup('Antenna and Propagation Society', 'Hack Hive')">
                 <div class="studio-button-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -293,25 +332,24 @@
                 </div>
             </div>
         </div>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2 id="popup-title"></h2>
-            <p id="popup-description"></p>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <div id="popup-body"></div>
+            </div>
         </div>
-    </div>
-
-    <script>
-        function openPopup(title, description) {
-            document.getElementById('popup-title').innerText = title;
-            document.getElementById('popup-description').innerText = description;
-            document.getElementById('popup').style.display = 'block';
-        }
-
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
-    </script>
+    
+        <script>
+            function openPopup(element) {
+                var content = element.closest('.APS').querySelector('.content').innerHTML;
+                document.getElementById('popup-body').innerHTML = content;
+                document.getElementById('popup').style.display = 'block';
+            }
+    
+            function closePopup() {
+                document.getElementById('popup').style.display = 'none';
+            }
+        </script>
 </body>
 
 </html>
