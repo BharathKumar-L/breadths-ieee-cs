@@ -45,9 +45,9 @@ li {
     font-size: large;
     border-radius: 25px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    transition: all 0.5s;
+    transition: all 0.3s;
     cursor: pointer;
 }
 
@@ -55,6 +55,9 @@ li {
     border: solid gray 2px;
     background-color: #0299b8;
     transform: scale(1.2);
+    box-shadow:
+        4px 4px 8px #82cee8,
+        -4px -4px 8px #56a1b3;
 }
 
 @media screen and (max-width: 768px) {
