@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="icon" href="img/icon.png">
 </head>
+
 <body>
     <nav>
         <a href="HOME.html"><img class="logo" src="img/IEEE_LOGO.png" alt="IEEE STUDENT BRANCH"></a>
@@ -14,16 +16,16 @@
             <li class="btn">
                 <a href="HOME.html"><button class="navbtn">HOME</button></a>
             </li>
-            <li class="btn">              
+            <li class="btn">
                 <a href="events.html"><button class="navbtn">EVENTS</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="register.html"><button class="navbtn">REGISTER</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="about.html"><button class="navbtn">ABOUT</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="contactus.html"><button class="navbtn">CONTACT US</button></a>
             </li>
         </ul>
@@ -40,6 +42,54 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;font-family: 'algerian' ;
-    letter-spacing:0.5mm;">IEEE BREADTHS</h1>
+    letter-spacing:0.5mm; ">IEEE BREADTHS</h1>
+    <h1>
+        A NATIONAL LEVEL TECHNICAL SYMPOSIUM
+    </h1>
+    <div class="countdown-container">
+        <h2>Welcome to the FASTLANE</h2>
+        <div class="countdown">
+            <div class="time">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="time">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="time">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="time">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let countDownDate = new Date("Sep 1, 2024 00:00:00").getTime();
+        let countdownfunction = setInterval(function () {
+            let now = new Date().getTime();
+            let distance = countDownDate - now;
+
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownfunction);
+                document.querySelector(".countdown").innerHTML = "REGISTRATIONS CLOSED";
+            }
+        }, 1000);
+
+    </script>
 </body>
+
 </html>

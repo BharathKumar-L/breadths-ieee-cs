@@ -15,6 +15,7 @@ body {
     font-weight: 700;
     color: #FFD700;
     text-transform: uppercase;
+    padding-bottom: 2%;
 }
 
 nav {
@@ -50,16 +51,19 @@ li {
     font-size: large;
     border-radius: 25px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    transition: all 0.5s;
     cursor: pointer;
 }
 
 .navbtn:hover {
     border: solid gray 2px;
-    background-color: purple;
+    background-color: #0299b8;
     transform: scale(1.2);
+    box-shadow:
+        4px 4px 8px #82cee8,
+        -4px -4px 8px #56a1b3;
+    transition: 0.3s;
 }
 
 h1 {
@@ -91,9 +95,7 @@ h1 span {
         margin: 0;
     }
 
-    .navbtn {
-        font-size: medium;
-    }
+
 
     h1 {
         font-size: 2em;
@@ -124,4 +126,36 @@ h1 span {
     h1 span {
         font-size: 1.25em;
     }
+}
+.countdown-container {
+    text-align: center;
+    color: gold;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+.countdown h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.time {
+    text-align: center;
+}
+
+.time span {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.time p {
+    font-size: 18px;
+    margin: 0;
 }
