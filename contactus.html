@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE BREADTHS</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contactus.css">
     <link rel="icon" href="img/icon.png">
 </head>
@@ -14,19 +14,35 @@
             <li class="btn">
                 <a href="HOME.html"><button class="navbtn">HOME</button></a>
             </li>
-            <li class="btn">              
+            <li class="btn">
                 <a href="events.html"><button class="navbtn">EVENTS</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="register.html"><button class="navbtn">REGISTER</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="about.html"><button class="navbtn">ABOUT</button></a>
             </li>
-            <li class="btn">                
+            <li class="btn">
                 <a href="contactus.html"><button class="navbtn">CONTACT US</button></a>
             </li>
         </ul>
-    </nav>    
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </main>
 </body>
 </html>

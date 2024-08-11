@@ -8,6 +8,7 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
@@ -59,24 +60,61 @@ li {
         -4px -4px 8px #56a1b3;
 }
 
+main {
+    padding: 2% 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2% auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0299b8;
+    transform: scale(1.1);
+    box-shadow:
+        4px 4px 8px #82cee8,
+        -4px -4px 8px #56a1b3;
+}
+
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
     .logo {
         width: 120px;
-        margin: 0;
     }
 
     .navbtn {
@@ -87,8 +125,8 @@ li {
         font-size: 2em;
     }
 
-    h1 span {
-        font-size: 1.5em;
+    form {
+        padding: 1% 2%;
     }
 }
 
@@ -109,7 +147,11 @@ li {
         font-size: 1.5em;
     }
 
-    h1 span {
-        font-size: 1.25em;
+    form {
+        padding: 2% 1%;
+    }
+
+    input, textarea {
+        max-width: 90%;
     }
 }
