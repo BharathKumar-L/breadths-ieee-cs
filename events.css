@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -81,18 +81,8 @@ body {
         -4px -4px 8px #56a1b3;
     transition-duration: 0.5s;
 }
-@font-face {
-    font-family: 'Collager';
-    src: url('FONTS/CollagerBlack-JpJDx.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-.APS .soc h1,
-.APS .title p {
-    font-family: '', sans-serif;
-}
 
-.APS:hover{
+.APS:hover {
     transform: scale(1.1);
 }
 
@@ -157,52 +147,38 @@ body {
     transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
 }
 
-#popup {
-    background-color: black;
-    color: white;
+.popup {
     display: none;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9); 
-    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-#popup-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+.popup-content {
+    margin-top: 5%;
+    background: #fff;
+    border-radius: 8px;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
 }
 
 .close-btn {
-    color: white;
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 40%;
-    padding: 0;
-    margin-right: 4%;
-    margin-top: 2%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 0.2%;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: #3bc7fa;
-    border-color:#3bc7fa ;
-    box-shadow:
-        2px 2px 2px #8ad2f8,
-        2px 2px 4px #7ab1e9,
-        4px 2px 4px #94c5f6,
-        -2px -2px 4px #56a1b3;  
+.event-content {
+    display: none;
 }
