@@ -107,6 +107,7 @@ body {
 .APS .soc {
     height: 40%;
     text-align: center;
+    text-transform:uppercase;
 }
 
 .APS .title {
@@ -161,13 +162,13 @@ body {
     color: white;
     display: none;
     position: fixed;
-    z-index: index 2;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.9); 
+    padding: 2%;
 }
 
 #popup-content {
@@ -181,15 +182,27 @@ body {
 }
 
 .close-btn {
-    color: #aaa;
+    color: white;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
+    border: 2px solid white;
+    border-radius: 40%;
+    padding: 0;
+    margin-right: 4%;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.2%;
 }
 
 .close-btn:hover,
 .close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: #3bc7fa;
+    border-color:#3bc7fa ;
+    box-shadow:
+        2px 2px 2px #8ad2f8,
+        2px 2px 4px #7ab1e9,
+        4px 2px 4px #94c5f6,
+        -2px -2px 4px #56a1b3;  
 }
