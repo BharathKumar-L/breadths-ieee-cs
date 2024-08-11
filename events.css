@@ -1,4 +1,4 @@
-*W{
+* {
     margin: 0;
     padding: 0;
 }
@@ -30,14 +30,14 @@ nav li {
     margin: 0 10px;
 }
 
-.event-content ul{
+.event-content ul {
     display: block;
     list-style: none;
 }
 
-.event-content li{
-    position: relative; 
-    padding-left: 20px; 
+.event-content li {
+    position: relative;
+    padding-left: 20px;
     margin-bottom: 5px;
     display: block;
 }
@@ -69,6 +69,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .events {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -79,12 +80,11 @@ body {
 }
 
 .APS {
-    height:330px; 
-    border-radius: 10px;
+    height: 330px;
+    border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
     grid-template-columns: 64px 1fr;
     padding: 2%;
     position: relative;
@@ -99,7 +99,7 @@ body {
 }
 
 .APS .image {
-    height: 30%; 
+    height: 30%;
 }
 
 .APS img {
@@ -109,7 +109,7 @@ body {
 .APS .soc {
     height: 40%;
     text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .APS .title {
@@ -149,7 +149,7 @@ body {
 }
 
 .APS:hover .studio-button {
-    cursor:pointer;
+    cursor: pointer;
     max-width: 100%;
 }
 
@@ -172,6 +172,10 @@ body {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.hamburger{
+  display:none;
+}
+
 .popup-content {
     background: #fff;
     border-radius: 8px;
@@ -187,6 +191,7 @@ body {
     scroll-behavior: smooth;
 
 }
+
 .popup-content::-webkit-scrollbar {
     width: 8px;
     background-color: transparent;
@@ -196,6 +201,7 @@ body {
     background-color: rgba(46, 181, 208, 0.5);
     border-radius: 10px;
 }
+
 .popup-content::-webkit-scrollbar-thumb:hover {
     background-color: rgba(46, 181, 208, 1);
     border-radius: 10px;
@@ -208,6 +214,7 @@ body {
 .popup-content::-webkit-scrollbar-button {
     display: none;
 }
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -217,13 +224,14 @@ body {
     float: right;
 }
 
-.close-btn:hover{
+.close-btn:hover {
     color: red;
     border: solid 1px red;
     border-radius: 20rem;
     padding-left: 2px;
     padding-right: 2px;
 }
+
 .event-content {
     display: none;
 }
@@ -231,85 +239,72 @@ body {
 
 @media screen and (max-width: 768px) {
     nav {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    .logo {
-        width: 120px;
-        margin: 0;
-    }
-
-
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h1 span {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 100px;
-    }
-
-    nav {
-        padding: 2%;
-    }
-
-    ul {
-        margin-top: 20px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h1 span {
-        font-size: 1.25em;
-    }
-}
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
     .logo {
-        width: 120px;
+        width: 150px;
         margin-left: 0;
     }
 
     nav ul {
+        display: none; 
         flex-direction: column;
-        margin-right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul.show {
+        display: flex;
     }
 
     nav li {
-        margin: 5px 0;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        font-size:40px;
+        margin-right:15px;
+        border-radius:15px;
+        background-color:white;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 5px;
+        padding-top:0;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     .events {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 30px;
+        align-items:center;
         padding: 1%;
         margin: 1%;
     }
 
     .APS {
-        height: auto;
+        height: 350px;
         flex-direction: column;
         grid-template-columns: 1fr;
     }
@@ -319,7 +314,7 @@ body {
     }
 
     .APS img {
-        width: 100%;
+        width: 50%;
     }
 
     .studio-button {
@@ -331,5 +326,79 @@ body {
     .popup-content {
         max-width: 100%;
         max-height: 100%;
+    }
+    .studio-button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    background: #0299b8;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transition: 0.35s ease all;
+    overflow: hidden;
+    max-width: 22px;
+}
+
+.studio-button-icon {
+    position: relative;
+    top: 1px;
+}
+
+.studio-button-label {
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 8px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.3s ease all;
+}
+
+.APS:hover .studio-button {
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.APS:hover .studio-button-label {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .APS {
+        width: 90%; 
+        max-width: 90%;
+        margin: 0 auto;
+        height: 350px;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 200px;
+    }
+
+    nav {
+        padding: 2%;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h1 span {
+        font-size: 1.25em;
     }
 }

@@ -39,3 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('show');
+    });
+});
+function toggleMenu() {
+    const menu = document.querySelector('#nav-links');
+    menu.classList.toggle('show');
+}
