@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
 
 
@@ -32,6 +33,10 @@ nav {
 .logo {
     width: 150px;
     margin-left: 10px;
+}
+
+.ieee{
+    width: 30%;
 }
 
 ul {
@@ -72,6 +77,11 @@ h1 span {
 }
 
 @media screen and (max-width: 768px) {
+    .contactus{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 2%;
+        padding: 2%;
+    }
     nav {
         flex-direction: column;
     }
@@ -87,26 +97,30 @@ h1 span {
     }
 
     .logo {
-        width: 200px;
+        width: 300px;
         margin: 0;
     }
-
-
-
     h1 {
-        font-size: 2em;
+        font-size: 1.2em;
     }
 
     h1 span {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .contactus{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 2%;
+        padding: 2%;
+    }
     .logo {
         width: 150px;
     }
-
+    .ieee{
+        width: 70%;
+    }
     nav {
         padding: 2%;
     }
@@ -116,7 +130,7 @@ h1 span {
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 25px;
     }
 
     h1 span {
