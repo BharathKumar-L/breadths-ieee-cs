@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, sans-serif;
     text-align: center;
+    line-height: 1.6;
 }
 
 nav {
@@ -110,46 +110,55 @@ input, textarea {
         -4px -4px 8px #56a1b3;
 }
 
-@media screen and (max-width: 768px) {
-    .logo {
-        width: 120px;
-    }
 
-    .navbtn {
-        font-size: medium;
-    }
 
-    h1 {
-        font-size: 2em;
-    }
-
-    form {
-        padding: 1% 2%;
-    }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 100px;
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
 
-    nav {
-        padding: 2%;
-    }
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    ul {
-        margin-top: 20px;
-    }
+.societies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 
-    h1 {
-        font-size: 1.5em;
-    }
+.society {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    form {
-        padding: 2% 1%;
-    }
+.society h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #007BFF;
+    text-align: center;
+}
 
-    input, textarea {
-        max-width: 90%;
-    }
+.contact {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact strong {
+    color: #007BFF;
 }

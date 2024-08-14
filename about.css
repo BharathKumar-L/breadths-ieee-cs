@@ -56,62 +56,6 @@ li {
     transform: translateY(-0.5em);
     box-shadow: 0 10px 8px #56a1b3;
 }
-
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    .logo {
-        width: 120px;
-        margin: 0;
-    }
-
-    .navbtn {
-        font-size: medium;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h1 span {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 100px;
-    }
-
-    nav {
-        padding: 2%;
-    }
-
-    ul {
-        margin-top: 20px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h1 span {
-        font-size: 1.25em;
-    }
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;

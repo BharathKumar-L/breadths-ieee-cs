@@ -235,17 +235,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .logo {
-        width: 150px;
-        margin-left: 0;
-    }
-
+@media screen and (max-width: 600px) {
     nav ul {
         display: none; 
         flex-direction: column;
@@ -293,110 +283,65 @@ body {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
+    nav ul {
+        display: none; /* Hide navigation links on mobile screens */
+    }
+
     .events {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        align-items:center;
-        padding: 1%;
-        margin: 1%;
+        grid-template-columns: 1fr; /* Stack events in one column */
     }
 
     .APS {
-        height: 350px;
-        flex-direction: column;
-        grid-template-columns: 1fr;
+        height: 300px; /* Adjust card height for mobile screens */
     }
 
-    .APS .image {
-        height: auto;
-    }
-
-    .APS img {
-        width: 50%;
-    }
-
-    .studio-button {
-        max-width: 100%;
-        position: static;
-        margin-top: 10px;
-    }
-
-    .popup-content {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .studio-button {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    display: flex;
-    align-items: center;
-    background: #0299b8;
-    color: white;
-    padding: 8px 10px;
-    border-radius: 50px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-    transition: 0.35s ease all;
-    overflow: hidden;
-    max-width: 22px;
-}
-
-.studio-button-icon {
-    position: relative;
-    top: 1px;
-}
-
-.studio-button-label {
-    text-transform: uppercase;
-    white-space: nowrap;
-    padding: 0 8px;
-    opacity: 0;
-    transform: translateX(10px);
-    transition: 0.3s ease all;
-}
-
-.APS:hover .studio-button {
-    cursor: pointer;
-    max-width: 100%;
-}
-
-.APS:hover .studio-button-label {
-    opacity: 1;
-    transform: translateX(0);
-    transition: 0.25s 0.1s ease-in opacity, 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275) transform;
-}
-}
-
-@media screen and (max-width: 768px) {
-    .APS {
-        width: 90%; 
-        max-width: 90%;
-        margin: 0 auto;
-        height: 350px;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
     .logo {
-        width: 200px;
+        width: 100px; /* Reduce logo size for mobile screens */
     }
+}
 
-    nav {
-        padding: 2%;
+/* For Tablets (screens between 601px and 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .hamburger {
+        display: block; /* Show hamburger menu on tablet screens */
     }
 
     nav ul {
-        margin-top: 20px;
+        display: none; /* Hide navigation links on tablet screens */
     }
 
-    h1 {
-        font-size: 1.5em;
+    .events {
+        grid-template-columns: repeat(2, 1fr); /* Display events in two columns */
     }
 
-    h1 span {
-        font-size: 1.25em;
+    .APS {
+        height: 300px; /* Adjust card height for tablets */
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size for tablets */
+    }
+}
+
+/* For Half Desktop Screen Width (1025px to 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .hamburger {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    nav ul {
+        display: flex; /* Show navigation links on larger screens */
+    }
+
+    .events {
+        grid-template-columns: repeat(3, 1fr); /* Display events in three columns */
+    }
+
+    .APS {
+        height: 300px; /* Adjust card height for half desktop screens */
+    }
+
+    .logo {
+        width: 140px; /* Adjust logo size for half desktop screens */
     }
 }
