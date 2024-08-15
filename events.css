@@ -276,6 +276,7 @@ body {
 }
 .popup-content h2{
     color: rgb(255, 0, 0);
+    text-align: left;
 }
 .popup-content h3{
     color: #df102f;
@@ -288,7 +289,6 @@ body {
 .Copyright{
     color: black;
 }
-
 
 
 @media only screen and (max-width: 768px) {
