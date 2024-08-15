@@ -225,10 +225,10 @@ body {
     align-items: center;
     background: #0299b8;
     color: white;
-    padding: 8px 10px;
     border-radius: 50px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     transition: 0.35s ease all;
+    padding: 10px 10px;
     overflow: hidden;
     max-width: 22px;
 }
@@ -366,7 +366,7 @@ body {
 }
 
 .popup-content h1{
-    color: #0299b8;
+    color: #2602b8;
     font-size: 40px;
     text-align: center;
 }
