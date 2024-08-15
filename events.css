@@ -333,12 +333,19 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
- .one{
+.one{
     border: 1px solid black;
     padding: 2%;
     margin-top: 5%;
-    margin-bottom: 3%;
- }
+    margin-bottom: 7%;
+}
+
+.two{
+    border: 1px solid black;
+    padding: 2%;
+    margin-top: 3%;
+    padding-top: 3%;
+}
 
 .popup-content h1{
     color: #0299b8;
@@ -347,6 +354,7 @@ body {
 }
 .popup-content h2{
     color: rgb(255, 0, 0);
+    text-align: center;
 }
 .popup-content h3{
     color: #df102f;
