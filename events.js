@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
+                content.classList.add('show'); 
             }
         });
 
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
+                content.classList.add('show'); // Ensure the .show class is added
             }
         });
     });
@@ -27,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButtons.forEach(btn => {
         const closePopup = () => {
             popup.style.display = 'none';
+            document.querySelectorAll('.event-content').forEach(content => {
+                content.classList.remove('show'); // Remove the .show class when the popup is closed
+            });
         };
 
         btn.addEventListener('click', closePopup);
@@ -36,19 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         if (event.target === popup) {
             popup.style.display = 'none';
+            document.querySelectorAll('.event-content').forEach(content => {
+                content.classList.remove('show'); // Remove the .show class when the popup is closed
+            });
         }
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        menu.classList.toggle('show');
-    });
-});
-function toggleMenu() {
-    const menu = document.querySelector('#nav-links');
-    menu.classList.toggle('show');
-}
