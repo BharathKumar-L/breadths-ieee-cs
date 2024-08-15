@@ -257,7 +257,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .hamburger{
@@ -333,11 +333,17 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
+ .one{
+    border: 1px solid black;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+ }
 
 .popup-content h1{
     color: #0299b8;
     font-size: 40px;
+    text-align: center;
 }
 .popup-content h2{
     color: rgb(255, 0, 0);
