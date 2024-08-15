@@ -191,24 +191,25 @@ body {
 }
 
 .APS .image {
-    height: 35%;
+    height: 30%;
     text-align: left;
 }
 
 .APS .image img {
-    width: 40%;
+    width: 30%;
     height: 100%;
 }
 
 .APS .soc {
-    height: 40%;
+    height: 45%;
     text-align: center;
     text-transform: uppercase;
 }
 
 .APS .title {
-    padding-top: 7%;
-    height: 25%;
+    height: 15%;
+    /* padding-top: 7%;
+    padding-bottom: 15%; */
     text-align: center;
     color: #017f92;
     font-size: 25px;
