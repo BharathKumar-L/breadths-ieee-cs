@@ -183,6 +183,8 @@ body {
         4px 4px 8px #2c3e50,
         -4px -4px 8px #56a1b3;
     transition-duration: 0.5s;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .APS:hover {
@@ -207,6 +209,8 @@ body {
     padding-top: 7%;
     height: 20%;
     text-align: center;
+    color: #017f92;
+    font-size: 25px;
 }
 
 .studio-button {
