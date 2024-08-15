@@ -353,6 +353,7 @@ body {
     padding: 2%;
     margin-top: 3%;
     padding-top: 3%;
+    ma
 }
 
 .popup-content h1{
@@ -361,17 +362,23 @@ body {
     text-align: center;
 }
 .popup-content h2{
-    color: rgb(255, 0, 0);
+    color: #0299b8;
     text-align: center;
 }
+
+
 .popup-content h3{
     color: #df102f;
 }
+
+
 .contactus{
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 2%;
     padding: 1%;
 }
+
+
 .Copyright{
     color: black;
 }
