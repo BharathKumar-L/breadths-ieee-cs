@@ -9,12 +9,13 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: justify;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
 }
-
 nav {
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     border-end-end-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -22,22 +23,48 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    backdrop-filter: blur(50px);
+    position: relative;
+    z-index: 1000;
 }
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 
 .logo {
     width: 150px;
     margin-left: 10px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
+    margin-right: 20px;
     display: flex;
-    justify-content: center;
-    margin-right: 10px;
+    float: right;
 }
-
-li {
-    margin: 0 10px;
+nav ul li {
+    margin: 0 7px;
+    display: inline-block;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    color: #fff;
+    right: 2%;
+    z-index: 10000;
 }
 
 .navbtn {
@@ -47,71 +74,20 @@ li {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    transition: all 0.3s;
+    transition: all 0.2s;
     cursor: pointer;
+    width: 158px;
 }
-
 .navbtn:hover {
     background-color: #0299b8;
-    transform: translateY(-0.5em);
+    transform: translateY(-0.3em);
     box-shadow: 0 10px 8px #56a1b3;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    li {
-        margin: 5px 0;
-    }
-
-    .logo {
-        width: 120px;
-        margin: 0;
-    }
-
-    .navbtn {
-        font-size: medium;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h1 span {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 100px;
-    }
-
-    nav {
-        padding: 2%;
-    }
-
-    ul {
-        margin-top: 20px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h1 span {
-        font-size: 1.25em;
-    }
-}
-
+.hamburger{
+    display:none;
+  }
+  
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -152,7 +128,7 @@ li {
     animation-delay: 1.3s;
 }
 .BREADTHS:hover,.STUDENTBRANCH:hover,.REC:hover{
-    background-color: rgba(56, 77, 98, 0.9);
+    background-color: rgba(70, 105, 141, 0.9);
     color: #FFFF;
     transition-duration: 0.4s;
     transition:ease-out 0.5s;
@@ -166,4 +142,66 @@ li {
 .header{
     color: rgb(71, 0, 106);
     margin-bottom: 1%;
+    text-align: left;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+    .navbtn {
+        padding: 10px 20px;
+        font-size: large;
+        border-radius: 25px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        width: 175px;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }

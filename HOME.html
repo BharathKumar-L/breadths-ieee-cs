@@ -10,28 +10,22 @@
 </head>
 
 <body>
-    <nav>
+    <nav style="align-items:right;">
         <a href="HOME.html"><img class="logo" src="img/IEEE_LOGO.png" alt="IEEE STUDENT BRANCH"></a>
-        <ul>
-            <li class="btn">
-                <a href="HOME.html"><button class="navbtn">HOME</button></a>
-            </li>
-            <li class="btn">
-                <a href="events.html"><button class="navbtn">EVENTS</button></a>
-            </li>
-            <li class="btn">
-                <a href="register.html"><button class="navbtn">REGISTER</button></a>
-            </li>
-            <li class="btn">
-                <a href="about.html"><button class="navbtn">ABOUT</button></a>
-            </li>
-            <li class="btn">
-                <a href="contactus.html"><button class="navbtn">CONTACT US</button></a>
-            </li>
+        <ul class="nav-menu">
+            <li class="btn"><a href="HOME.html" class="nav-link"><button class="navbtn">HOME</button></a></li>
+            <li class="btn"><a href="events.html" class="nav-link"><button class="navbtn">EVENTS</button></a></li>
+            <li class="btn"><a href="about.html" class="nav-link"><button class="navbtn">ABOUT</button></a></li>
+            <li class="btn"><a href="contactus.html" class="nav-link"><button class="navbtn">CONTACT US</button></a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
-    <br>
-    <img style="width: 25%;" class="logo" src="img/logo.png" alt="IEEE STUDENT BRANCH">
+ <br>
+    <img  class="ieee" src="img/logo.png" alt="IEEE STUDENT BRANCH">
     <h1 style="font-size: 350%; color: black;"><span style="font-size: 175%;">IEEE</span> <br> STUDENT BRANCH </h1>
     <h1>of</h1>
     <h1 style="color: rgb(241, 172, 24);">RAJALAKSHMI ENGINEERING COLLEGE</h1>
@@ -71,7 +65,7 @@
         
         <p class="Copyright">Copyright © 2024 All rights reserved | REC</p>
     </footer>
-    <script>
+    <script >
         let countDownDate = new Date("Sep 1, 2024 00:00:00").getTime();
         let countdownfunction = setInterval(function () {
             let now = new Date().getTime();
@@ -94,6 +88,8 @@
         }, 1000);
 
     </script>
+    <script src="main.js"></script>
+    
 </body>
 
 </html>

@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
-                content.classList.add('show'); 
             }
         });
 
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
-                content.classList.add('show'); // Ensure the .show class is added
             }
         });
     });
@@ -29,9 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButtons.forEach(btn => {
         const closePopup = () => {
             popup.style.display = 'none';
-            document.querySelectorAll('.event-content').forEach(content => {
-                content.classList.remove('show'); // Remove the .show class when the popup is closed
-            });
         };
 
         btn.addEventListener('click', closePopup);
@@ -41,9 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         if (event.target === popup) {
             popup.style.display = 'none';
-            document.querySelectorAll('.event-content').forEach(content => {
-                content.classList.remove('show'); // Remove the .show class when the popup is closed
-            });
         }
     });
 });
