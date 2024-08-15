@@ -18,6 +18,71 @@ nav {
     z-index: 1000;
 }
 
+.event-content {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    line-height: 1.8; /* Increase line height for readability */
+    color: #333; /* Text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font style */
+}
+
+.event-content h2 {
+    font-size: 2em;
+    color: #0299b8; /* Accent color for headings */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0299b8; /* Bottom border for headings */
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.event-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.event-content ul {
+    list-style: disc inside; /* Disc list with inside alignment */
+    padding-left: 0; /* Remove padding */
+    margin-bottom: 20px;
+}
+
+.event-content ul li {
+    margin-bottom: 10px;
+    padding-left: 10px; /* Indent list items */
+}
+
+.event-content a {
+    color: #0299b8; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+.event-content a:hover {
+    color: #017f92; /* Darker shade on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.event-content .btn {
+    display: inline-block;
+    background-color: #0299b8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.event-content .btn:hover {
+    background-color: #017f92; /* Darker shade on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
 .bar {
     display: block;
     width: 25px;
@@ -192,7 +257,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .hamburger{
@@ -268,15 +333,28 @@ body {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+.one{
+    border: 1px solid black;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
 
+.two{
+    border: 1px solid black;
+    padding: 2%;
+    margin-top: 3%;
+    padding-top: 3%;
+}
 
 .popup-content h1{
     color: #0299b8;
     font-size: 40px;
+    text-align: center;
 }
 .popup-content h2{
     color: rgb(255, 0, 0);
-    text-align: left;
+    text-align: center;
 }
 .popup-content h3{
     color: #df102f;
