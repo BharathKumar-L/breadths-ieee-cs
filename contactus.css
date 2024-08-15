@@ -89,63 +89,8 @@ nav ul li {
     padding: 1%;
 }
 
-main {
-    padding: 2% 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 2% auto;
-    box-shadow: 0 4px 8px #56a1b3;
-}
-
-h1 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.submit-btn {
-    padding: 10px 20px;
-    font-size: large;
-    border-radius: 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #0299b8;
-    transform: scale(1.1);
-    box-shadow:
-        4px 4px 8px #82cee8,
-        -4px -4px 8px #56a1b3;
-}
-
-
-
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 20px;
 }
