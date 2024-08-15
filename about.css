@@ -151,8 +151,13 @@ nav ul li {
 }
 
 .Copyright{
-    padding: 1%;
+    padding: 0.3%;
     color: black;
+    border: solid 2px yellow;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 35px;
+    margin-top: 5px;
 }
 .nav-links{
     padding: 1%;
@@ -165,6 +170,7 @@ nav ul li {
 }
 .reachus {
     text-align: left;
+    width: 40%;
     padding: 20px;
     border-radius: 8px;
     margin: 0 auto;
@@ -225,6 +231,7 @@ nav ul li {
 #reach{
     display: flex;
     flex-direction: row;
+    margin-bottom: 5px;
 }
 .creators{
     border-radius: 8px;
