@@ -84,65 +84,14 @@ nav ul li {
     color: #fff;
     right: 2%;
     z-index: 10000;
-}
-
-main {
-    padding: 2% 5%;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    max-width: 800px;
-    margin: 2% auto;
-    box-shadow: 0 4px 8px #56a1b3;
-}
-
-h1 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.submit-btn {
-    padding: 10px 20px;
-    font-size: large;
-    border-radius: 25px;
-    color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
+    padding: 1%;
 }
-
-.submit-btn:hover {
-    background-color: #0299b8;
-    transform: scale(1.1);
-    box-shadow:
-        4px 4px 8px #82cee8,
-        -4px -4px 8px #56a1b3;
-}
-
 
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -169,6 +118,7 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
 }
 
 .society h2 {
@@ -180,8 +130,12 @@ p {
 
 .contact {
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1.75px solid #ddd;
     padding-bottom: 10px;
+}
+
+.contact1{
+    border-top: 1.75px solid #ddd;
 }
 
 .contact p {
@@ -192,8 +146,118 @@ p {
     color: #007BFF;
 }
 
+.contactus{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 2%;
+    padding: 1%;
+}
 
-@media only screen and (max-width: 768px) {
+.Copyright{
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    color: black;
+}
+.nav-links{
+    padding: 1%;
+    word-spacing: 60px;
+}
+.links{
+    text-decoration: none ;
+    color: #29bfdd;
+    font-size: 20px;
+}
+.reachus {
+    text-align: left;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    color: white;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.reachus p{
+    text-align: left;
+}
+.phone-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.footer-hr {
+    border: none;
+    height: 2px;
+    background-color: #FEC20E;
+    margin-bottom: 20px;
+}
+.creators .footer-hr{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+.reachus h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+.reachus p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+.phone {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.phone-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+#reach{
+    display: flex;
+    flex-direction: row;
+}
+.creators{
+    border-radius: 8px;
+    margin: 0 auto;
+    color: #29bfdd   ;
+    width: 60%;
+    text-align: center;
+    padding-top:0.75px;
+    padding-bottom: 2px;
+}
+.creators h1{
+    color: #FFDD00;
+    margin: 2px;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.names p{
+    margin:0 auto;
+}
+
+
+@media only screen and (max-width: 480px) {
     nav ul {
         position: fixed;
         left: -100%;
@@ -210,6 +274,125 @@ p {
             0 10px 27px rgba(0, 0, 0, 0.2);
         z-index: 9999;
     }
+
+    .navbtn {
+        padding: 10px 20px;
+        font-size: large;
+        border-radius: 25px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        width: 175px;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+
+    .navbtn {
+        padding: 10px 20px;
+        font-size: large;
+        border-radius: 25px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+        width: 175px;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 3.5rem;
+        padding-top: 25%;
+        padding-bottom: 25%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+
     .navbtn {
         padding: 10px 20px;
         font-size: large;
