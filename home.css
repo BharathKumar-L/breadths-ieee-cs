@@ -251,6 +251,85 @@ h1 span {
 .names p{
     margin:0 auto;
 }
+.team-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #030000;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.team-member p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.team-member a {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+.n{
+    height: 70%;
+}
+
+.flw {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #007bff; 
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .flw__text {
+    margin-right: 5px;
+  }
+  
+  .flw__icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor; 
+  }
 
 @media only screen and (max-width: 480px) {
     nav ul {
