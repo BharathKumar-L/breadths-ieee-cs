@@ -119,6 +119,9 @@ nav ul li {
     color: #fff;
     right: 2%;
     z-index: 10000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
 }
 
 .event-content ul {
@@ -260,9 +263,7 @@ body {
     background: rgba(0, 0, 0, 0.85);
 }
 
-.hamburger{
-  display:none;
-}
+
 
 .popup-content {
     background: white;
