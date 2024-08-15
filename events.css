@@ -261,9 +261,6 @@ body {
 }
 
 .event-content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    color: blue;
     display: none;
 }
 .event-content h1,h3,h2,h4,h5{
@@ -272,6 +269,17 @@ body {
     margin-bottom: 5px;
 }
 
+
+.popup-content h1{
+    color: #0299b8;
+    font-size: 40px;
+}
+.popup-content h2{
+    color: rgb(255, 0, 0);
+}
+.popup-content h3{
+    color: #df102f;
+}
 .contactus{
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 2%;
