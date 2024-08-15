@@ -13,7 +13,6 @@ body {
     text-align: center;
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
-    color: #FFD700;
     text-transform: uppercase;
 }
 
@@ -143,9 +142,6 @@ h1 span {
     color: black;
 }
 
-@media only screen and (max-width: 768px) {
-    
-}
 
 @media only screen and (max-width: 480px) {
     nav ul {
@@ -224,7 +220,6 @@ h1 span {
         font-size: 36px;
     }
 }
-/* For screens between 481px and 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     nav ul {
         position: fixed;
@@ -302,7 +297,6 @@ h1 span {
         font-size: 40px;
     }
 }
-/* For screens between 769px and 1024px */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     nav ul {
         position: fixed;
