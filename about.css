@@ -126,7 +126,7 @@ nav ul li {
     animation-delay: 1.3s;
 }
 .BREADTHS:hover,.STUDENTBRANCH:hover,.REC:hover{
-    background-color: rgba(56, 77, 98, 0.9);
+    background-color: rgba(70, 105, 141, 0.9);
     color: #FFFF;
     transition-duration: 0.4s;
     transition:ease-out 0.5s;
@@ -140,7 +140,10 @@ nav ul li {
 .header{
     color: rgb(71, 0, 106);
     margin-bottom: 1%;
+    text-align: left;
 }
+
+
 
 
 @media only screen and (max-width: 768px) {

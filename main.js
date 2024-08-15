@@ -9,6 +9,11 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     document.body.classList.toggle("no-scroll");
+
+    const elementsToBlur = document.querySelectorAll('body > *:not(nav)'); 
+    elementsToBlur.forEach(element => {
+        element.classList.toggle('blur');
+    });
 }
 
 function closeMenu() {
