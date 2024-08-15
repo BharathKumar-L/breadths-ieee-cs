@@ -202,6 +202,7 @@ body {
 
 .APS .soc {
     height: 45%;
+    justify-content: center;
     text-align: center;
     text-transform: uppercase;
 }
@@ -225,10 +226,12 @@ body {
     align-items: center;
     background: #0299b8;
     color: white;
-    border-radius: 50px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     transition: 0.35s ease all;
-    padding: 10px 10px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 50px;
     overflow: hidden;
     max-width: 22px;
 }
@@ -236,6 +239,7 @@ body {
 .studio-button-icon {
     position: relative;
     top: 1px;
+    margin-right: 10px;
 }
 
 .studio-button-label {
