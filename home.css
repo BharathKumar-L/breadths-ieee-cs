@@ -5,20 +5,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
 
-.mainn{
+.mainn {
     font-size: 400%;
-    background: linear-gradient(90deg, #00bfff, #1e90ff, #6495ed, #7b68ee, #4169e1, #0000ff);
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #1e90ff, #4169e1, #0000ff, #0072ff, #00c6ff);
+    background-size: 300%;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;font-family: 'algerian',serif;
-    letter-spacing:0.5mm;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 1s alternate-reverse infinite;
+    letter-spacing: 0.5mm;
+    margin: 20px 20px;
+
 }
 
 body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-        text-align: center;
+    text-align: center;
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     padding-top: 90px;
@@ -57,25 +60,30 @@ nav {
     margin-left: 10px;
 }
 
-.ieee{
-    width: 30%;
+.ieee {
+    width: 35%;
 }
-.no-scroll{
+
+.no-scroll {
     overflow-y: hidden;
 }
+
 nav ul {
     list-style-type: none;
     margin-right: 20px;
     display: flex;
     float: right;
 }
+
 nav ul li {
     margin: 0 7px;
     display: inline-block;
 }
+
 .no-scroll {
     overflow: hidden;
 }
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -100,37 +108,74 @@ nav ul li {
     cursor: pointer;
     width: 158px;
 }
+
 .navbtn:hover {
     background-color: #0299b8;
     transform: translateY(-0.3em);
     box-shadow: 0 10px 8px #56a1b3;
 }
-  
-h1 {
-    color: black;
-    margin: 20px 0;    
+
+.sb {
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #1e90ff, #4169e1, #0000ff, #0072ff, #00c6ff);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 1s alternate-reverse infinite;
+    letter-spacing: 0.5mm;
+    margin: 10px 0;
 }
 
-h1 span {
-    font-size: 1.75em;
+h1 {
+    background: linear-gradient(90deg, #333333, #1a1a1a, #000000, #0d0d0d, #1c1c1c, #000000);
+    margin: 20px 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5mm;
 }
+
+
 
 .countdown-container {
     text-align: center;
-    color:#FFDD00;
-    font-family: 'Arial', sans-serif;
+    color: #FFDD00;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 .countdown h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 28px;
 }
 
 .countdown {
     display: flex;
     justify-content: center;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #1e90ff, #4169e1, #0000ff, #0072ff, #00c6ff);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 1s alternate-reverse infinite;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     gap: 40px;
+    margin: 0 auto;
+    padding: 2%;
+    width: fit-content;
+    margin-top: 10px;
+
+}
+@keyframes glitter {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .time {
@@ -148,12 +193,13 @@ h1 span {
     margin: 0;
 }
 
-.contactus{
+.contactus {
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 2%;
     padding: 1%;
 }
-.Copyright{
+
+.Copyright {
     padding: 0.3%;
     color: black;
     border: solid 2px yellow;
@@ -161,15 +207,18 @@ h1 span {
     border-radius: 35px;
     margin-top: 5px;
 }
-.nav-links{
+
+.nav-links {
     padding: 1%;
     word-spacing: 60px;
 }
-.links{
-    text-decoration: none ;
+
+.links {
+    text-decoration: none;
     color: #29bfdd;
     font-size: 20px;
 }
+
 .reachus {
     text-align: left;
     padding: 20px;
@@ -180,6 +229,7 @@ h1 span {
     max-width: 400px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 .phone-container {
     display: flex;
     align-items: center;
@@ -187,17 +237,20 @@ h1 span {
     font-size: 18px;
     font-weight: bold;
 }
+
 .footer-heading {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .footer-hr {
     border: none;
     height: 2px;
     background-color: #FEC20E;
     margin-bottom: 20px;
 }
-.creators .footer-hr{
+
+.creators .footer-hr {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
@@ -206,57 +259,68 @@ h1 span {
     text-align: center;
     width: 50%;
 }
+
 .reachus h3 {
     margin: 0 0 15px 0;
     font-size: 20px;
 }
+
 .reachus p {
     margin: 5px 0;
     line-height: 1.5;
 }
+
 .phone {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
 }
+
 .phone-icon {
     vertical-align: middle;
     margin-right: 10px;
 }
-.icons{
+
+.icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
-#reach{
+
+#reach {
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
 }
-.creators{
+
+.creators {
     border-radius: 8px;
     margin: 0 auto;
-    color: #29bfdd   ;
+    color: #29bfdd;
     width: 60%;
     text-align: center;
-    padding-top:0.75px;
+    padding-top: 0.75px;
     padding-bottom: 2px;
 }
-.creators h1{
+
+.creators h1 {
     color: #FFDD00;
     margin: 2px;
 }
-.names{
+
+.names {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.names p{
-    margin:0 auto;
+
+.names p {
+    margin: 0 auto;
 }
+
 .team-section {
     padding: 20px;
     text-align: center;
@@ -310,7 +374,8 @@ h1 span {
 .team-member a:hover {
     text-decoration: underline;
 }
-.n{
+
+.n {
     height: 50%;
 }
 
@@ -320,22 +385,22 @@ h1 span {
     padding: 5px 10px;
     font-weight: bold;
     text-decoration: none;
-    background-color: #007bff; 
+    background-color: #007bff;
     color: #fff;
     cursor: pointer;
     border: none;
     border-radius: 25px;
-  }
-  
-  .flw__text {
+}
+
+.flw__text {
     margin-right: 5px;
-  }
-  
-  .flw__icon {
+}
+
+.flw__icon {
     width: 16px;
     height: 16px;
-    fill: currentColor; 
-  }
+    fill: currentColor;
+}
 
 .event-schedule {
     display: grid;
@@ -347,64 +412,69 @@ h1 span {
     background: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .event {
+}
+
+.event {
     background: #ffffff;
     padding: 15px;
     border-left: 5px solid #4CAF50;
     border-radius: 8px;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .event:hover {
+}
+
+.event:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  .time {
+}
+
+.time {
     font-size: 1.2em;
     font-weight: bold;
     color: #333;
-  }
-  
-  .activity {
+}
+
+.activity {
     font-size: 1.1em;
     margin-top: 5px;
     color: #777;
-  }
-  
-  .slot1 ul,
-  .slot2 ul {
+}
+
+.slot1 ul,
+.slot2 ul {
     margin-top: 10px;
     list-style-type: none;
     padding-left: 20px;
-  }
-  
-  .slot1 ul li,
-  .slot2 ul li {
+}
+
+.slot1 ul li,
+.slot2 ul li {
     font-size: 0.95em;
     color: #555;
     padding: 2px 0;
-  }
-  
-  .slot1 ul li:before,
-  .slot2 ul li:before {
+}
+
+.slot1 ul li:before,
+.slot2 ul li:before {
     content: "•";
     color: #4CAF50;
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
-  }
+}
 
-.list ul{
+.list ul {
     text-align: left;
 }
-.eve{
-    color: #0000ff;
-}
+
+.eve {
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #1e90ff, #4169e1, #0000ff, #0072ff, #00c6ff);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 1s alternate-reverse infinite;}
+
 .reg {
     background: linear-gradient(135deg, #4A90E2, #50A5F1);
     border: none;
@@ -416,7 +486,10 @@ h1 span {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.7),
+        0 0 30px rgba(255, 105, 180, 0.6),
+        0 0 40px rgba(135, 206, 250, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
@@ -432,6 +505,10 @@ h1 span {
     width: 300%;
     height: 300%;
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.7),
+        0 0 30px rgba(255, 105, 180, 0.6),
+        0 0 40px rgba(135, 206, 250, 0.5);
     transform: translate(-50%, -50%) rotate(45deg);
     transition: all 0.75s ease;
     opacity: 0;
@@ -451,7 +528,10 @@ h1 span {
 
 .reg:active {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(30, 10, 162, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.7),
+        0 0 30px rgba(255, 105, 180, 0.6),
+        0 0 40px rgba(135, 206, 250, 0.5);
 }
 
 @media only screen and (max-width: 480px) {
@@ -511,12 +591,13 @@ h1 span {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .logo {
         width: 150px;
     }
 
     .ieee {
-        width: 50%;
+        width: 70%;
     }
 
     h1 {
@@ -530,6 +611,7 @@ h1 span {
     .time span {
         font-size: 36px;
     }
+
     .nav-links {
         padding: 5%;
         word-spacing: 20px;
@@ -543,7 +625,7 @@ h1 span {
         width: 90%;
         padding: 10px;
         max-width: 300px;
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
 
     .phone-container {
@@ -559,7 +641,8 @@ h1 span {
         margin-bottom: 15px;
         width: 70%;
     }
-    .footer-hr{
+
+    .footer-hr {
         margin-bottom: 0 auto;
         width: 100%;
     }
@@ -604,10 +687,12 @@ h1 span {
     .names p {
         margin-bottom: 8px;
     }
+
     .Copyright {
         text-align: center;
         font-size: 12px;
     }
+
     .event-schedule {
         width: 90%;
         padding: 10px;
@@ -637,6 +722,7 @@ h1 span {
         font-size: 0.85em;
     }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     nav ul {
         position: fixed;
@@ -694,12 +780,13 @@ h1 span {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .logo {
         width: 180px;
     }
 
     .ieee {
-        width: 40%;
+        width: 60%;
     }
 
     h1 {
@@ -713,6 +800,7 @@ h1 span {
     .time span {
         font-size: 40px;
     }
+
     .nav-links {
         padding: 4%;
         word-spacing: 30px;
@@ -726,7 +814,7 @@ h1 span {
         width: 70%;
         padding: 15px;
         max-width: 320px;
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
 
     .phone-container {
@@ -742,7 +830,8 @@ h1 span {
         margin-bottom: 15px;
         width: 65%;
     }
-    .footer-hr{
+
+    .footer-hr {
         margin-bottom: 0 auto;
         width: 100%;
     }
@@ -787,6 +876,7 @@ h1 span {
     .names p {
         margin-bottom: 8px;
     }
+
     .event-schedule {
         width: 80%;
         padding: 15px;
@@ -815,8 +905,9 @@ h1 span {
     .slot2 ul li {
         font-size: 0.9em;
     }
-    
+
 }
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     nav ul {
         position: fixed;
@@ -874,12 +965,13 @@ h1 span {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .logo {
         width: 150px;
     }
 
     .ieee {
-        width: 35%;
+        width: 45%;
     }
 
     h1 {
@@ -893,6 +985,7 @@ h1 span {
     .time span {
         font-size: 44px;
     }
+
     .nav-links {
         padding: 2%;
         word-spacing: 40px;
@@ -906,7 +999,7 @@ h1 span {
         width: 50%;
         padding: 18px;
         max-width: 350px;
-        margin-bottom:15px;
+        margin-bottom: 15px;
     }
 
     .phone-container {
@@ -917,11 +1010,13 @@ h1 span {
     .footer-heading {
         font-size: 22px;
     }
+
     .creators .footer-hr {
         margin-bottom: 15px;
         width: 60%;
     }
-    .footer-hr{
+
+    .footer-hr {
         margin-bottom: 0 auto;
         width: 100%;
     }
@@ -966,11 +1061,12 @@ h1 span {
     .names p {
         margin-bottom: 10px;
     }
-    
+
     .Copyright {
         text-align: center;
         font-size: 16px;
     }
+
     .event-schedule {
         width: 60%;
         padding: 15px;
@@ -994,5 +1090,5 @@ h1 span {
     .slot2 ul li {
         font-size: 0.9em;
     }
-    
+
 }

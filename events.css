@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-@import url(FONTS/Baskervville-Regular.ttf);
 nav {
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -165,7 +164,7 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
     text-align: center;
     line-height: 1.6;
     padding-top: 70px;
@@ -202,6 +201,9 @@ body {
 .APS .image {
     height: 35%;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .APS .image img {
@@ -211,7 +213,11 @@ body {
 .APS .soc {
     height: 40%;
     text-align: center;
+    margin-top: 20px;
     text-transform: uppercase;
+}
+.APS .soc h1{
+    font-size: 25px;
 }
 
 .APS .title {
@@ -221,7 +227,6 @@ body {
     color: #017f92;
     font-size: 25px;
     font-weight: 700;
-
 }
 
 .studio-button {
@@ -294,7 +299,6 @@ body {
     overflow-y: auto;
     scroll-behavior: smooth;
     color: black; 
-    font-family:"Baskervville Regular",serif;
 }
 
 .popup-content::-webkit-scrollbar {
@@ -498,6 +502,46 @@ body {
 }
 .names p{
     margin:0 auto;
+}.rform {
+    margin-top: auto;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #02b0d4, #028ba0);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 153, 184, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.rform::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+.rform:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.rform:hover {
+    background: linear-gradient(145deg, #02d4f7, #027a91);
+    box-shadow: 0 8px 20px rgba(0, 153, 184, 0.8);
 }
 
 @media only screen and (max-width: 480px) {

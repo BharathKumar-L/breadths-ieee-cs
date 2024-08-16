@@ -9,8 +9,8 @@ body {
     background-image: url('img/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Arial, sans-serif;
     text-align: center;
+    font-family: 'Outfit', sans-serif;
     padding-top: 90px;
     line-height: 1.6;
 }
