@@ -265,6 +265,22 @@ p {
 .names p{
     margin:0 auto;
 }
+.cont{
+    text-align: justify;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto ;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.5px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.cont p{
+    text-align: justify;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -324,6 +340,80 @@ p {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+    
+.nav-links {
+    padding: 5%;
+    word-spacing: 20px;
+}
+
+.links {
+    font-size: 14px;
+}
+
+.reachus {
+    width: 90%;
+    padding: 10px;
+    max-width: 300px;
+    margin-bottom:15px;
+}
+
+.phone-container {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.footer-heading {
+    font-size: 18px;
+}
+.creators .footer-hr {
+    margin-bottom: 10px;
+    width: 70%;
+}
+.footer-hr{
+    margin-bottom: 0 auto;
+    width: 100%;
+}
+
+.reachus h3 {
+    font-size: 16px;
+}
+
+.reachus p {
+    line-height: 1.3;
+}
+
+.phone {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.icons {
+    gap: 10px;
+}
+
+#reach {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.creators {
+    width: 95%;
+    padding: 5px;
+}
+
+.creators h1 {
+    font-size: 18px;
+}
+
+.names {
+    flex-direction: row;
+    text-align: center;
+}
+
+.names p {
+    margin-bottom: 8px;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -383,35 +473,58 @@ p {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
     .nav-links {
-        padding: 5%;
-        word-spacing: 20px;
-        text-align: center;
-        margin-bottom: 20px;
+        padding: 4%;
+        word-spacing: 30px;
     }
 
     .links {
         font-size: 16px;
-        margin-bottom: 10px;
     }
 
-    .creators {
-        width: 90%;
+    .reachus {
+        width: 70%;
         padding: 15px;
+        max-width: 320px;
+        margin-bottom:15px;
     }
 
-    .creators h1 {
+    .phone-container {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .footer-heading 
+    {
         font-size: 20px;
-        margin-bottom: 10px;
     }
 
-    .names {
-        flex-direction: row;
+    .creators .footer-hr {
+        margin-bottom: 12px;
+        width: 65%;
+
+    }
+    .footer-hr{
+        margin-bottom: 0 auto;
+        width: 100%;
     }
 
-    .names p {
-        margin-bottom: 10px;
-        text-align: center;
+    .reachus h3 {
+        font-size: 17px;
+    }
+
+    .reachus p {
+        line-height: 1.4;
+    }
+
+    .phone {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+
+    .icons {
+        gap: 12px;
     }
 
     #reach {
@@ -420,30 +533,23 @@ p {
         text-align: center;
     }
 
-    .reachus {
-        width: 90%;
-        margin-bottom: 20px;
+    .creators {
+        width: 80%;
+        padding: 8px;
     }
 
-    .phone-container {
-        justify-content: center;
-    }
-
-    .icons {
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .footer-heading {
+    .creators h1 {
         font-size: 20px;
     }
 
-    .footer-hr {
-        width: 100%;
-        margin: 0 auto;
+    .names {
+        flex-direction: row;
+        text-align: center;
     }
-    
+
+    .names p {
+        margin-bottom: 8px;
+    }
     .Copyright {
         text-align: center;
         font-size: 14px;
@@ -507,4 +613,78 @@ p {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+    
+.nav-links {
+    padding: 2%;
+    word-spacing: 40px;
+}
+
+.links {
+    font-size: 18px;
+}
+
+.reachus {
+    width: 50%;
+    padding: 18px;
+    max-width: 350px;
+    margin-bottom:15px;
+}
+
+.phone-container {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-heading {
+    font-size: 22px;
+}
+.creators .footer-hr {
+    margin-bottom: 15px;
+    width: 60%;
+}
+.footer-hr{
+    margin-bottom: 0 auto;
+    width: 100%;
+}
+
+.reachus h3 {
+    font-size: 18px;
+}
+
+.reachus p {
+    line-height: 1.4;
+}
+
+.phone {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.icons {
+    gap: 15px;
+}
+
+#reach {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.creators {
+    width: 70%;
+    padding: 10px;
+}
+
+.creators h1 {
+    font-size: 22px;
+}
+
+.names {
+    flex-direction: row;
+    text-align: center;
+}
+
+.names p {
+    margin-bottom: 10px;
+}
 }
