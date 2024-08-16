@@ -215,8 +215,8 @@ body {
 }
 
 .APS .title {
-    padding-top: 7%;
-    height: 25%;
+    height: 10px;
+    padding-top:15px;
     text-align: center;
     color: #017f92;
     font-size: 25px;
@@ -277,8 +277,6 @@ body {
     z-index: 1000;
     background: rgba(0, 0, 0, 0.85);
 }
-
-
 
 .popup-content {
     background: white;
@@ -344,11 +342,13 @@ body {
 .event-content {
     display: none;
 }
+
 .event-content h1,h3,h2,h4,h5{
     margin-top: 5px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
 .one{
     border: 5px solid black;
     border-radius: 10px ;
