@@ -126,7 +126,7 @@ nav ul li {
 }
 
 h1 {
-    background: linear-gradient(90deg, #333333, #1a1a1a, #000000, #0d0d0d, #1c1c1c, #000000);
+    background: linear-gradient(90deg, #4d4d4d, #3a3a3a, #2e2e2e, #252525, #1f1f1f, #2e2e2e, #4d4d4d);
     margin: 20px 0;
     background-clip: text;
     -webkit-background-clip: text;
