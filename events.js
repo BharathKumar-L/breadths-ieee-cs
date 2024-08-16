@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('event-popup');
     const eventDetails = document.getElementById('event-details');
     const closeButtons = document.querySelectorAll('.close-btn');
+    
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
             }
         });
 
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 eventDetails.innerHTML = content.innerHTML;
                 popup.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
             }
         });
     });
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButtons.forEach(btn => {
         const closePopup = () => {
             popup.style.display = 'none';
+            document.body.style.overflow = '';
         };
 
         btn.addEventListener('click', closePopup);

@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: Arial, sans-serif;
     text-align: center;
+    padding-top: 90px;
     line-height: 1.6;
 }
 
@@ -27,7 +28,9 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     backdrop-filter: blur(50px);
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -379,6 +382,71 @@ p {
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-links {
+        padding: 5%;
+        word-spacing: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .creators {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .creators h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .names {
+        flex-direction: row;
+    }
+
+    .names p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #reach {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reachus {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .phone-container {
+        justify-content: center;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    .footer-hr {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .Copyright {
+        text-align: center;
+        font-size: 14px;
     }
 }
 
