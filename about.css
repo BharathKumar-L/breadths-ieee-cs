@@ -274,9 +274,25 @@ nav ul li {
 }
 
 .creators h1 {
-    color: #FFDD00;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #1e90ff, #4169e1, #0000ff, #0072ff, #00c6ff);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitter 1s alternate-reverse infinite;
     margin: 2px;
 }
+@keyframes glitter {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .names {
     display: flex;
