@@ -1,0 +1,102 @@
+{
+    "name": "Ieee breadths website",
+    "short_name": "BREADTHS",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#4AAED9",
+    "theme_color": "#4AAED9",
+    "orientation": "portrait",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/img/icon.png",
+        "sizes": "226x223",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/bg2.jpg",
+        "sizes": "612x344",
+        "type": "image/jpg"
+      },
+      {
+        "src": "/img/cislogo.png",
+        "sizes": "269x116",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/comsoc-logo.png",
+        "sizes": "803x310",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/EMBS.png",
+        "sizes": "189x105",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icon.png",
+        "sizes": "226x223",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/IEEE_CS.png",
+        "sizes": "426x203",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/IEEE_LOGO.png",
+        "sizes": "644x208",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/IEEE_PELS.png",
+        "sizes": "209x94",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/IEEE_TEMS.png",
+        "sizes": "420x208",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/IEEE_VTS.png",
+        "sizes": "225x137",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/linkedinlogo.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/linlogo.png",
+        "sizes": "3000x693",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/logo.png",
+        "sizes": "630x190",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/MTTS.png",
+        "sizes": "351x152",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/PES.png",
+        "sizes": "196x176",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/PHOTONICS.png",
+        "sizes": "299x148",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/RAS.png",
+        "sizes": "824x303",
+        "type": "image/png"
+      }
+    ]
+  }

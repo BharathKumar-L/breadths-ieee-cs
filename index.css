@@ -80,10 +80,6 @@ nav ul li {
     display: inline-block;
 }
 
-.no-scroll {
-    overflow: hidden;
-}
-
 .hamburger {
     display: none;
     cursor: pointer;
@@ -133,8 +129,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.5mm;
 }
-
-
 
 .countdown-container {
     text-align: center;
